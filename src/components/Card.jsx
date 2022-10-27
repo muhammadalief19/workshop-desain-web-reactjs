@@ -1,7 +1,7 @@
 import img1 from '../img/img-1.png';
 import { useState } from 'react';
 export default function Card() {
-  const [prize, setPrize] = useState('');
+  const [prize, setPrize] = useState('-');
   function k207() {
     setPrize('207.000');
   }
