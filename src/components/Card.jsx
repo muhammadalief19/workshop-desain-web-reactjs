@@ -3,17 +3,21 @@ import { useState } from 'react';
 export default function Card() {
   const [prize, setPrize] = useState('-');
   function k207() {
-    setPrize('207.000');
+    setPrize(207000);
   }
   function k357() {
-    setPrize('314.000');
+    setPrize(314000);
   }
   function k472() {
-    setPrize('379.000');
+    setPrize(379000);
   }
   function k321r() {
-    setPrize('694.000');
+    setPrize(694000);
   }
+  const addToCard = () => {
+    alert('Produk Telah Di tambahkan ke keranjang');
+    setPrize('-');
+  };
   return (
     <div className="w-full flex h-screen justify-center items-center">
       <div className="container grid grid-cols-2">
@@ -21,7 +25,7 @@ export default function Card() {
           <img src={img1} alt="" className="" />
         </div>
         <div className="w-full py-5 px-10 flex flex-col justify-around">
-          <p className="text-5xl  font-bold">The best SetUp Gaming</p>
+          <p className="text-5xl  font-bold">The best Gaming SetUp</p>
           <p className="text-3xl font-semibold ">December Relaease</p>
           <p className="text-xl  font-medium">
             Id: <span className="text-sky-600 cursor-pointer">Gaming Santuy</span>
@@ -51,7 +55,9 @@ export default function Card() {
           </div>
           <div className="">
             <button className="px-5 py-3 bg-emerald-500 hover:bg-emerald-700 duration-200 transition-all font-semibold text-white rounded-md">Buy Now</button>
-            <button className="px-5 py-3 bg-teal-700 hover:bg-emerald-900 duration-200 transition-all  ml-7 font-semibold text-white rounded-md">Add to cart</button>
+            <button className="px-5 py-3 bg-teal-700 hover:bg-emerald-900 duration-200 transition-all  ml-7 font-semibold text-white rounded-md" onClick={addToCard}>
+              Add to cart
+            </button>
           </div>
         </div>
       </div>
