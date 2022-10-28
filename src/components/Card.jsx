@@ -26,7 +26,7 @@ export default function Card() {
           <p className="text-xl  font-medium">
             Id: <span className="text-sky-600 cursor-pointer">Gaming Santuy</span>
           </p>
-          <p className="text-lg ">
+          <p className="text-lg indent-16 text-justify">
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi soluta ullam perferendis id dignissimos voluptas, obcaecati provident reiciendis, ad excepturi assumenda numquam. Officiis quia, fugit obcaecati consequuntur quam
             harum voluptates, voluptatibus similique nam consequatur error expedita architecto eos natus totam temporibus aspernatur minima deleniti quaerat cum doloribus pariatur quod nostrum quae. Iusto, odit aspernatur delectus quam
             expedita cumque aliquid facere?
