@@ -64,7 +64,7 @@ function Card2() {
   return (
     <div className="w-full grid grid-flow-row gap-y-10 justify-center items-center">
       {/* title */}
-      <div className="container h-10 box-border ">
+      <div className="container h-10 box-border">
         <p className="text-2xl text-center font-extrabold">LATIHAN</p>
       </div>
       {/* title */}
@@ -138,7 +138,7 @@ function Card2() {
             <p className="text-xl font-semibold mb-5">Prize</p>
             <p className="text-3xl font-bold">IDR {prize},-</p>
           </div>
-          <div className="w-3/4">
+          <div className="w-full">
             <button className="px-5 py-3 bg-emerald-500 hover:bg-emerald-700 duration-200 transition-all font-semibold text-white rounded-md">Buy Now</button>
             <button className="px-5 py-3 bg-teal-700 hover:bg-emerald-900 duration-200 transition-all  ml-7 font-semibold text-white rounded-md" onClick={addToCard}>
               Add to cart
