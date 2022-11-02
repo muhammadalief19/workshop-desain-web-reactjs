@@ -1,5 +1,6 @@
 import img1 from '../img/img-1.png';
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 export default function Card() {
   const [prize, setPrize] = useState('-');
   function k207() {
@@ -19,7 +20,14 @@ export default function Card() {
     setPrize('-');
   };
   return (
-    <div className="w-full flex h-screen justify-center items-center">
+    <div className="w-full grid grid-flow-row gap-y-10 justify-center items-center">
+      {/* title */}
+      <div className="container h-10 box-border ">
+        <p className="text-2xl text-center font-extrabold">TUGAS</p>
+      </div>
+      {/* title */}
+
+      {/* card-1 */}
       <div className="container grid grid-cols-2">
         <div className="w-full">
           <img src={img1} alt="" className="" />
@@ -51,16 +59,20 @@ export default function Card() {
             </div>
           </div>
           <div className="">
-            <p className="text-xl font-extrabold">IDR {prize}</p>
+            <p className="text-3xl font-extrabold">IDR {prize}</p>
           </div>
           <div className="">
             <button className="px-5 py-3 bg-emerald-500 hover:bg-emerald-700 duration-200 transition-all font-semibold text-white rounded-md">Buy Now</button>
             <button className="px-5 py-3 bg-teal-700 hover:bg-emerald-900 duration-200 transition-all  ml-7 font-semibold text-white rounded-md" onClick={addToCard}>
               Add to cart
             </button>
+            <Link to="latihan" className="px-5 py-3 bg-lime-700 hover:bg-lime-900 duration-200 transition-all  ml-7 font-semibold text-white rounded-md">
+              Go to Latihan
+            </Link>
           </div>
         </div>
       </div>
+      {/* card-1*/}
     </div>
   );
 }
