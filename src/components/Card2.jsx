@@ -70,9 +70,9 @@ function Card2() {
       {/* title */}
 
       {/* card-2 */}
-      <div className="container grid grid-cols-2">
+      <div className="container grid lg:grid-cols-2 grid-cols-1 grid-flow-row">
         <div className="">
-          <img src={Img2} alt="" className="" />
+          <img src={Img2} alt="" className="w-full aspect-square" />
         </div>
         <div className="w-full px-10 flex flex-col justify-evenly">
           <p className="font-medium text-blue-500">Keyboard</p>
@@ -103,18 +103,18 @@ function Card2() {
           </div>
           <div className="w-full">
             <p className="font-semibold mb-4">Colors</p>
-            <div className="w-1/2 flex justify-around">
-              <div className="w-[30%] aspect-video border border-slate-800 grid grid-cols-2 relative cursor-pointer rounded" onClick={color1}>
+            <div className="w-[35%] flex justify-between">
+              <div className="w-[30%] aspect-square border-2 border-slate-700 grid grid-rows-2 relative cursor-pointer rounded-full overflow-hidden" onClick={color1}>
                 <div className={`absolute w-full h-full bg-slate-600 bg-opacity-75 justify-center items-center text-white ${btn1 ? 'flex' : 'hidden'}`}>
                   <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
                   </svg>
                 </div>
-                <div className="w-full h-full bg-sky-600 aspect-video"></div>
-                <div className="w-full h-full aspect-video"></div>
+                <div className=" bg-sky-600"></div>
+                <div className=""></div>
               </div>
 
-              <div className="w-[30%] aspect-video flex justify-center items-center border border-slate-800 relative cursor-pointer rounded" onClick={color2}>
+              <div className="w-[30%] aspect-square border-2 border-slate-700 relative cursor-pointer rounded-full overflow-hidden" onClick={color2}>
                 <div id="btn2" className={`absolute w-full h-full bg-slate-600 bg-opacity-75 justify-center items-center text-white ${btn2 ? 'flex' : 'hidden'}`}>
                   <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
@@ -122,7 +122,7 @@ function Card2() {
                 </div>
               </div>
 
-              <div className="w-[30%] aspect-video border border-slate-800 relative grid grid-cols-2 cursor-pointer rounded" onClick={color3}>
+              <div className="w-[30%] aspect-square border-2 border-slate-700 grid grid-rows-2 relative cursor-pointer rounded-full overflow-hidden" onClick={color3}>
                 <div id="btn3" className={`absolute w-full h-full bg-slate-600 bg-opacity-75 justify-center items-center text-white ${btn3 ? 'flex' : 'hidden'}`}>
                   <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
@@ -138,12 +138,12 @@ function Card2() {
             <p className="text-xl font-semibold mb-5">Prize</p>
             <p className="text-3xl font-bold">IDR {prize},-</p>
           </div>
-          <div className="w-full">
-            <button className="px-5 py-3 bg-emerald-500 hover:bg-emerald-700 duration-200 transition-all font-semibold text-white rounded-md">Buy Now</button>
-            <button className="px-5 py-3 bg-teal-700 hover:bg-emerald-900 duration-200 transition-all  ml-7 font-semibold text-white rounded-md" onClick={addToCard}>
+          <div className="w-full flex flex-wrap justify-around">
+            <button className="w-[40%] lg:w-max px-5 py-3 bg-emerald-500 hover:bg-emerald-700 duration-200 transition-all font-semibold text-white rounded-md">Buy Now</button>
+            <button className=" w-[40%] lg:w-max px-5 py-3 bg-teal-700 hover:bg-emerald-900 duration-200 transition-all  lg:ml-7 font-semibold text-white rounded-md" onClick={addToCard}>
               Add to cart
             </button>
-            <Link to="/" className="px-5 py-3 bg-lime-700 hover:bg-lime-900 duration-200 transition-all  ml-7 font-semibold text-white rounded-md ">
+            <Link to="/" className="w-[40%] lg:w-max px-5 py-3 bg-lime-700 hover:bg-lime-900 duration-200 transition-all lg:ml-7 font-semibold text-white rounded-md text-center mt-10 md:mt-0">
               Go to Tugas
             </Link>
           </div>
